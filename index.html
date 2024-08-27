@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <style>
+      .container1{
+                 display: flex;
+                 justify-content: center;
+                 margin-left: 10%;
+                 margin-top: 150px;
+                }
+     .chandu{
+                 display:flex ;
+                 justify-content: center;
+                 margin-right: 300px;
+                 margin:200px ;
+                }          
+        .circle1{
+                 margin: 10px;
+                 background-color: orangered;
+                 width: 100px;
+                 height: 100px;
+                 border-radius: 50%;
+                 animation: bounce;
+                 animation-duration: 3s;
+                 animation-timing-function:ease-in;
+                 animation-iteration-count: infinite;
+                 animation-direction:alternate-reverse;
+                }
+        .circle2{
+                 margin: 10px;
+                 background-color: orangered;
+                 width: 100px;
+                 height: 100px;
+                 border-radius: 50%;
+                 animation: bounce;
+                 animation-duration: 4s;
+                 animation-timing-function:ease-in;
+                 animation-iteration-count: infinite;
+                 animation-direction:alternate-reverse;
+                }
+        .circle3{
+                 margin: 10px;
+                 background-color: orangered;
+                 width: 100px;
+                 height: 100px;
+                 border-radius: 50%;
+                 animation: bounce;
+                 animation-duration: 6s;
+                 animation-timing-function:linear;
+                 animation-iteration-count: infinite;
+                 animation-direction:alternate-reverse;
+                }
+        .circle4{
+                 margin: 10px;
+                 background-color:rgb(126, 221, 126);
+                 width: 30px;
+                 height: 30px;
+                 border-radius: 50%;
+                 animation: changecolor;
+                 animation-duration:7s ;
+                 animation-iteration-count: infinite;
+                 animation-delay: 1s;
+
+                }
+        .circle5{
+                 margin: 10px;
+                 background-color:rgb(126, 221, 126);
+                 width: 30px;
+                 height: 30px;
+                 border-radius: 50%;
+                 animation: changecolor;
+                 animation-duration: 7s;
+                 animation-iteration-count: infinite;
+                 animation-delay:2s ;
+                } 
+        .circle6{
+                 margin: 10px;
+                 background-color:rgb(126, 221, 126);
+                 width: 30px;
+                 height: 30px;
+                 border-radius: 50%;
+                 animation: changecolor;
+                 animation-duration: 6s;
+                 animation-iteration-count: infinite;
+                }
+
+        @keyframes bounce{
+            from{
+                 transform: translate(0px,200px);
+                }
+              to{
+                 transform: translate(0px 200px);
+                }   
+              }
+        @keyframes changecolor{
+            from{
+                 background-color: green;
+                 transform: scale(1.2);
+            }
+        }     
+    </style>
+</head>
+<body>
+    
+    <div class="container1">
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+    <div class="circle3"></div>
+    </div>
+      <div class="chandu">
+        <div class="circle4"></div>
+        <div class="circle5"></div>
+        <div class="circle6"></div>
+    </div>
+</body>
+    </html>
